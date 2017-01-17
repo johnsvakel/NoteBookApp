@@ -1,0 +1,6 @@
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookCommn\bin\Debug\NoteBookCommn.dll.config
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookCommn\bin\Debug\NoteBookCommn.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookCommn\bin\Debug\NoteBookCommn.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookCommn\obj\Debug\NoteBookCommn.csprojResolveAssemblyReference.cache
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookCommn\obj\Debug\NoteBookCommn.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookCommn\obj\Debug\NoteBookCommn.pdb

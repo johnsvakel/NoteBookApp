@@ -1,0 +1,5 @@
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookSync\bin\Debug\NoteBookSync.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookSync\bin\Debug\NoteBookSync.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookSync\obj\Debug\NoteBookSync.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookSync\obj\Debug\NoteBookSync.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookSync\obj\Debug\NoteBookSync.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppUTProj\bin\Debug\NoteAppUTProj.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppUTProj\bin\Debug\NoteAppUTProj.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppUTProj\obj\Debug\NoteAppUTProj.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppUTProj\obj\Debug\NoteAppUTProj.pdb

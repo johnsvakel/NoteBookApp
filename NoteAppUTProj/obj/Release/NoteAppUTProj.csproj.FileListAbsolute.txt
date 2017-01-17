@@ -1,0 +1,5 @@
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\bin\NoteAppUTProj.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\bin\NoteAppUTProj.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppUTProj\obj\Release\NoteAppUTProj.csprojResolveAssemblyReference.cache
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppUTProj\obj\Release\NoteAppUTProj.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppUTProj\obj\Release\NoteAppUTProj.pdb

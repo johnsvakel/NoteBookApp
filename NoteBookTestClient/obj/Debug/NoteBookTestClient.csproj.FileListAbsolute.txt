@@ -1,0 +1,8 @@
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookTestClient\bin\Debug\NoteBookTestClient.exe.config
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookTestClient\bin\Debug\NoteBookTestClient.exe
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookTestClient\bin\Debug\NoteBookTestClient.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookTestClient\obj\Debug\NoteBookTestClient.csprojResolveAssemblyReference.cache
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookTestClient\obj\Debug\NoteBookTestClient.Properties.Resources.resources
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookTestClient\obj\Debug\NoteBookTestClient.csproj.GenerateResource.Cache
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookTestClient\obj\Debug\NoteBookTestClient.exe
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookTestClient\obj\Debug\NoteBookTestClient.pdb

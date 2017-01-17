@@ -1,0 +1,4 @@
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookObj\bin\Debug\NoteBookObj.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookObj\bin\Debug\NoteBookObj.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookObj\obj\Debug\NoteBookObj.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookObj\obj\Debug\NoteBookObj.pdb

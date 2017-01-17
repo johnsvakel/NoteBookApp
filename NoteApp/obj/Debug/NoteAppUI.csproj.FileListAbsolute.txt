@@ -1,0 +1,17 @@
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\bin\Debug\NoteApp.exe.config
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\bin\Debug\NoteApp.exe
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\bin\Debug\NoteApp.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Debug\NoteAppUI.csprojResolveAssemblyReference.cache
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Debug\MainWindow.baml
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Debug\MainWindow.g.cs
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Debug\App.g.cs
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Debug\NoteApp_MarkupCompile.cache
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Debug\NoteApp.g.resources
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Debug\NoteApp.NoteAppMain.resources
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Debug\NoteApp.Properties.Resources.resources
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Debug\NoteAppUI.csproj.GenerateResource.Cache
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Debug\NoteApp.exe
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Debug\NoteApp.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\bin\Debug\NoteBookObj.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\bin\Debug\NoteBookObj.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\bin\Debug\NoteBookSync.dll

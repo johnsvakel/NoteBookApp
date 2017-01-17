@@ -1,0 +1,16 @@
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\bin\Release\NoteApp.exe.config
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\NoteApp.exe
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\NoteApp.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\bin\NoteApp.exe.config
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\NoteAppUI.csprojResolveAssemblyReference.cache
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\MainWindow.baml
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\MainWindow.g.cs
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\App.g.cs
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\NoteApp_MarkupCompile.cache
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\NoteApp.g.resources
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\NoteApp.NoteAppMain.resources
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\NoteApp.Properties.Resources.resources
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\NoteAppUI.csproj.GenerateResource.Cache
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\bin\NoteApp.exe
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\bin\NoteApp.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteApp\obj\Release\NoteApp.PreferenceDlg.resources

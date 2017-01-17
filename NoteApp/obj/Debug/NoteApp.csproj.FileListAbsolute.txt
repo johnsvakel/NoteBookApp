@@ -1,0 +1,14 @@
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\bin\Debug\NoteApp.exe.config
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\bin\Debug\NoteApp.exe
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\bin\Debug\NoteApp.pdb
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Debug\MainWindow.baml
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Debug\MainWindow.g.cs
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Debug\App.g.cs
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Debug\NoteApp_MarkupCompile.cache
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Debug\NoteApp.g.resources
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Debug\NoteApp.NoteAppMain.resources
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Debug\NoteApp.Properties.Resources.resources
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Debug\NoteApp.csproj.GenerateResource.Cache
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Debug\NoteApp.exe
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Debug\NoteApp.pdb
+c:\users\johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Debug\NoteApp.csprojResolveAssemblyReference.cache

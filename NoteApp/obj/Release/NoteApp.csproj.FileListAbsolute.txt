@@ -1,0 +1,13 @@
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\bin\Release\NoteApp.exe.config
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\bin\Release\NoteApp.exe
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\bin\Release\NoteApp.pdb
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Release\MainWindow.baml
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Release\MainWindow.g.cs
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Release\App.g.cs
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Release\NoteApp_MarkupCompile.cache
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Release\NoteApp.g.resources
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Release\NoteApp.NoteAppMain.resources
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Release\NoteApp.Properties.Resources.resources
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Release\NoteApp.csproj.GenerateResource.Cache
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Release\NoteApp.exe
+C:\Users\Johns\documents\visual studio 2013\Projects\NoteApp\NoteApp\obj\Release\NoteApp.pdb

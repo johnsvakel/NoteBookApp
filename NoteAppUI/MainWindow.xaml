@@ -1,0 +1,22 @@
+﻿<Window x:Class="NoteAppUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Note Book" Height="534.021" Width="650" Background="DarkGreen">
+    <Grid Margin="0,0,-6.8,-170.6">
+        <Button Background="Blue" Content="New Note" Name="buttonNewNote" HorizontalAlignment="Left" Height="45" Margin="10,5,0,0" VerticalAlignment="Top" Width="100" Click="buttonNewNote_Click"/>
+        <Button Content="Delete Note" Background="Blue" Name="buttonDeleteNote" HorizontalAlignment="Left" Height="45" Margin="115,5,0,0" VerticalAlignment="Top" Width="92" Click="buttonDeleteNote_Click"/>
+        <TextBox Name="textBoxSearch" HorizontalAlignment="Left" Height="30" Margin="10,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="197"/>
+        <DataGrid Background="Black" Name="dataGridView1" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Height="378" Width="197" SelectionMode="Single"/>
+        <RichTextBox Name ="richTextBoxNotes" HorizontalAlignment="Left" Height="413" Margin="212,55,0,0" VerticalAlignment="Top" Width="422" Background="Yellow">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Name ="btnEmailNote" Background="Blue" Content="Email Note" HorizontalAlignment="Left" Margin="212,5,0,0" VerticalAlignment="Top" Width="101" Height="45" Click="btnEmailNote_Click"/>
+        <Label Content="Created"  Name="lableCreated" HorizontalAlignment="Left" Margin="212,473,0,0" VerticalAlignment="Top" Width="196"/>
+        <Label Content="Modified" Name="labelModified" HorizontalAlignment="Left" Margin="433,473,0,0" VerticalAlignment="Top" Width="201"/>
+
+    </Grid>
+</Window>

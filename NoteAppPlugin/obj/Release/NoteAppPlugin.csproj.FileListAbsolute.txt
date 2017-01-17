@@ -1,0 +1,7 @@
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppPlugin\bin\Release\NoteAppPlugin.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppPlugin\bin\Release\NoteAppPlugin.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppPlugin\obj\Release\NoteAppPlugin.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppPlugin\obj\Release\NoteAppPlugin.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\bin\NoteAppPlugin.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\bin\NoteAppPlugin.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteAppPlugin\obj\Release\NoteAppPlugin.csprojResolveAssemblyReference.cache

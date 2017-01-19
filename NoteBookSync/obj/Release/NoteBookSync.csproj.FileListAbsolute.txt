@@ -1,4 +1,5 @@
 C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\bin\NoteBookSync.dll
 C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\bin\NoteBookSync.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookSync\obj\Release\NoteBookSync.csprojResolveAssemblyReference.cache
 C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookSync\obj\Release\NoteBookSync.dll
 C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\NoteBookSync\obj\Release\NoteBookSync.pdb

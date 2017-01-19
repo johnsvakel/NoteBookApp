@@ -17,7 +17,8 @@ namespace NoteBookSync
         {
             bool bSync = false;
             FileSyncScopeFilter obj = new FileSyncScopeFilter();
-            FileSyncOptions options = FileSyncOptions.ExplicitDetectChanges;
+
+            FileSyncOptions options = FileSyncOptions.CompareFileStreams;
             SyncFileSystemReplicasOneWay(strLocalDir, strServerDir, obj, options);
             return bSync;
         }
@@ -90,7 +91,80 @@ namespace NoteBookSync
                     provider.Dispose();
             }
         }
+        /*
+         * 
+        static void Main(string[] args)
+        {
+            string myDocsPath = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string Dir1 = Path.Combine(myDocsPath, "Dir1");
+            string Dir2 = Path.Combine(myDocsPath, "Dir2");
+            string metadataPath = Path.Combine(myDocsPath, "Metadata");
+            string tempDir = Path.Combine(myDocsPath, "Cache");
+            string trashDir = Path.Combine(myDocsPath, "Trash");
+            FileSyncScopeFilter filter = new FileSyncScopeFilter();
+            filter.FileNameExcludes.Add("*.metadata");
+            FileSyncOptions options = FileSyncOptions.None;
 
+            //DetectChanges
+            DetectChangesOnFileSystemReplica(Dir1, filter, options, Dir1, "filesync.metadata", tempDir, trashDir);
+            DetectChangesOnFileSystemReplica(Dir2, filter, options, Dir2, "filesync.metadata", tempDir, trashDir);
+
+            //SyncChanges Both Ways
+            SyncFileSystemReplicasOneWay(Dir1, Dir2, filter, options, Dir1, "filesync.metadata", tempDir, trashDir);
+            SyncFileSystemReplicasOneWay(Dir2, Dir1, filter, options, Dir2, "filesync.metadata", tempDir, trashDir);
+        }
+
+        public static void DetectChangesOnFileSystemReplica(string replicaRootPath, FileSyncScopeFilter filter, FileSyncOptions options, string metadataPath, string metadataFile, string tempDir, string trashDir)
+        {
+            FileSyncProvider provider = null;
+            try
+            {
+                provider = new FileSyncProvider(replicaRootPath, filter, options, metadataPath, metadataFile, tempDir, trashDir);
+                provider.DetectChanges();
+            }
+            finally
+            {
+                // Release resources
+                if (provider != null)
+                    provider.Dispose();
+            }
+        }
+        public static void SyncFileSystemReplicasOneWay(string sourceReplicaRootPath, string destinationReplicaRootPath, FileSyncScopeFilter filter, FileSyncOptions options, string metadataPath, string metadataFile, string tempDir, string trashDir)
+        {
+            FileSyncProvider sourceProvider = null;
+            FileSyncProvider destinationProvider = null;
+            try
+            {
+                sourceProvider = new FileSyncProvider(sourceReplicaRootPath, filter, options, metadataPath, metadataFile, tempDir, trashDir);
+                destinationProvider = new FileSyncProvider(destinationReplicaRootPath, filter, options, metadataPath, metadataFile, tempDir, trashDir);
+
+                destinationProvider.AppliedChange += new EventHandler<AppliedChangeEventArgs>(OnAppliedChange);
+                destinationProvider.SkippedChange += new EventHandler<SkippedChangeEventArgs>(OnSkippedChange);
+
+                SyncOrchestrator agent = new SyncOrchestrator();
+                agent.LocalProvider = sourceProvider;
+                agent.RemoteProvider = destinationProvider;
+                agent.Direction = SyncDirectionOrder.Upload; // Sync source to destination
+                Console.WriteLine("Synchronizing changes to replica: " + destinationProvider.RootDirectoryPath);
+                agent.Synchronize();
+            }
+            finally
+            {
+                // Release resources
+                if (sourceProvider != null) sourceProvider.Dispose();
+                if (destinationProvider != null) destinationProvider.Dispose();
+            }
+        }
+         */
+        public static bool SyncFileSystemReplicasOneWay(string sourceReplicaRootPath, string destinationReplicaRootPath, FileSyncScopeFilter filter, FileSyncOptions options, string metadataPath1, string metadataFile1, string metadataPath2, string metadataFile2, string tempDir, string trashDir)
+        {
+            bool bSync = false;
+            FileSyncProvider sourceProvider = null;
+            FileSyncProvider destinationProvider = null;
+            sourceProvider = new FileSyncProvider(sourceReplicaRootPath, filter, options, metadataPath1, metadataFile1, tempDir, trashDir);
+            destinationProvider = new FileSyncProvider(destinationReplicaRootPath, filter, options, metadataPath2, metadataFile2, tempDir, trashDir);
+            return bSync;
+        }
         public static bool SyncFileSystemReplicasOneWay(
                 string sourceReplicaRootPath, string destinationReplicaRootPath,
                 FileSyncScopeFilter filter, FileSyncOptions options)
@@ -99,28 +173,45 @@ namespace NoteBookSync
             FileSyncProvider sourceProvider = null;
             FileSyncProvider destinationProvider = null;
 
+            options = FileSyncOptions.ExplicitDetectChanges
+                   | FileSyncOptions.RecycleConflictLoserFiles
+                   | FileSyncOptions.RecycleDeletedFiles
+                   | FileSyncOptions.RecyclePreviousFileOnUpdates;
+            filter.FileNameExcludes.Add("*.pete");
+
             try
             {
-                sourceProvider = new FileSyncProvider(
-                    sourceReplicaRootPath, filter, options);
-                destinationProvider = new FileSyncProvider(
-                    destinationReplicaRootPath, filter, options);
+                // Avoid two change detection passes for the two-way sync
+                FindFileSystemReplicaChanges(sourceReplicaRootPath, filter, options);
+                FindFileSystemReplicaChanges(destinationReplicaRootPath, filter, options);
 
-                destinationProvider.AppliedChange +=
-                    new EventHandler<AppliedChangeEventArgs>(OnAppliedChange);
-                destinationProvider.SkippedChange +=
-                    new EventHandler<SkippedChangeEventArgs>(OnSkippedChange);
+                OneWaySyncFileSystemReplicas(sourceReplicaRootPath, destinationReplicaRootPath, null, options);
+                OneWaySyncFileSystemReplicas(destinationReplicaRootPath, sourceReplicaRootPath, null, options);
 
-                Microsoft.Synchronization.SyncOrchestrator  agent = new SyncOrchestrator();
-                agent.LocalProvider = sourceProvider;
-                agent.RemoteProvider = destinationProvider;
-                agent.Direction = SyncDirectionOrder.Upload; // Sync source to destination
+                //sourceProvider = new FileSyncProvider(
+                //    sourceReplicaRootPath, filter, options);
+                //destinationProvider = new FileSyncProvider(
+                //    destinationReplicaRootPath, filter, options);
 
-                Console.WriteLine("Synchronizing changes to replica: " +
-                    destinationProvider.RootDirectoryPath);
-                agent.Synchronize();
+                //destinationProvider.AppliedChange +=
+                //    new EventHandler<AppliedChangeEventArgs>(OnAppliedChange);
+                //destinationProvider.SkippedChange +=
+                //    new EventHandler<SkippedChangeEventArgs>(OnSkippedChange);
+
+                //Microsoft.Synchronization.SyncOrchestrator agent = new SyncOrchestrator();
+                //agent.LocalProvider = sourceProvider;
+                //agent.RemoteProvider = destinationProvider;
+                //agent.Direction = SyncDirectionOrder.Upload; // Sync source to destination
+
+                //Console.WriteLine("Synchronizing changes to replica: " +
+                //    destinationProvider.RootDirectoryPath);
+                //agent.Synchronize();
                 bSync = true;
             }
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);  
+            //}
             finally
             {
                 // Release resources
@@ -129,7 +220,49 @@ namespace NoteBookSync
             }
             return bSync;
         }
+        public static void FindFileSystemReplicaChanges(string replicaRootPath, FileSyncScopeFilter filter, FileSyncOptions options)
+        {
+            FileSyncProvider provider = null;
 
+            try
+            {
+                provider = new FileSyncProvider(replicaRootPath, filter, options);
+                provider.DetectChanges();
+            }
+            finally
+            {
+                if (provider != null)
+                    provider.Dispose();
+            }
+        }
+
+        public static void OneWaySyncFileSystemReplicas(string sourceReplicaRootPath, string destinationReplicaRootPath, FileSyncScopeFilter filter, FileSyncOptions options)
+        {
+            FileSyncProvider path1Provider = null;
+            FileSyncProvider path2Provider = null;
+
+            try
+            {
+                path1Provider = new FileSyncProvider(sourceReplicaRootPath, filter, options);
+                path2Provider = new FileSyncProvider(destinationReplicaRootPath, filter, options);
+
+                path2Provider.SkippedChange += OnSkippedChange;
+                path2Provider.AppliedChange += OnAppliedChange;
+
+                SyncOrchestrator manager = new SyncOrchestrator();
+                manager.LocalProvider = path1Provider;
+                manager.RemoteProvider = path2Provider;
+                manager.Direction = SyncDirectionOrder.Upload;
+                manager.Synchronize();
+            }
+            finally
+            {
+                if (path1Provider != null)
+                    path1Provider.Dispose();
+                if (path2Provider != null)
+                    path2Provider.Dispose();
+            }
+        }
         public static void OnAppliedChange(object sender, AppliedChangeEventArgs args)
         {
             switch (args.ChangeType)

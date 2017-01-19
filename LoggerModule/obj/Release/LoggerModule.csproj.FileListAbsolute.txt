@@ -1,0 +1,4 @@
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\LoggerModule\bin\Release\LoggerModule.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\LoggerModule\bin\Release\LoggerModule.pdb
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\LoggerModule\obj\Release\LoggerModule.dll
+C:\DDrive\JOHNS\BITS\NoteApp\NoteApp\LoggerModule\obj\Release\LoggerModule.pdb
